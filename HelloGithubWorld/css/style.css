@@ -1,0 +1,710 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header,
+nav,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* col_12 */
+div[class*="col-"] {
+  padding: 15px;
+}
+
+nav,
+.banner_info,
+.container,
+.very_end_container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.33%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+/*  */
+
+/* header part */
+header {
+  background-color: rgba(54, 54, 54, 255);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav li {
+  display: inline-block;
+}
+
+.brand_name {
+  display: block;
+  color: aliceblue;
+  text-transform: capitalize;
+  font-size: 20px;
+  padding: 7px 0;
+}
+
+:root {
+  --reddish: rgba(208, 67, 81, 255);
+}
+
+.home_page {
+  color: var(--reddish);
+}
+
+nav li a {
+  display: block;
+  padding: 10px;
+  color: aliceblue;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* drop down menu */
+.drop_li {
+  position: relative;
+}
+
+.drop_down_list {
+  padding: 5px 8px;
+  background-color: rgba(54, 54, 54, 255);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translatex(-50%);
+  z-index: 10;
+  display: none;
+}
+
+.drop_down_list a {
+  display: block;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 3px 5px;
+  border-bottom: 1px solid aliceblue;
+  color: aliceblue;
+  text-align: center;
+}
+
+.drop_li:hover .drop_down_list {
+  display: block;
+}
+
+.drop_li a i {
+  display: inline-block;
+  padding: 0 2px;
+  vertical-align: text-top;
+}
+/* header banner part */
+
+.banner_background {
+  padding: 100px 0;
+  background-image: url(../images/notre-dame.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: auto;
+}
+
+.banner_info {
+  padding-top: 20px;
+}
+.banner_info h1 {
+  display: inline-block;
+  background-color: var(--reddish);
+  color: aliceblue;
+  text-transform: capitalize;
+  filter: opacity(0.8);
+  padding: 10px;
+  margin: 0 15px;
+}
+
+.banner_text {
+  display: inline-block;
+  background-color: rgba(69, 69, 67, 255);
+  color: aliceblue;
+  text-transform: capitalize;
+
+  filter: opacity(0.8);
+  padding: 10px;
+  margin: 0 15px;
+  max-width: 50%;
+}
+
+.banner_slides {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.banner_slides a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.banner_slides a:first-child {
+  display: inline-block;
+  padding: 5px 12px;
+  background-color: rgba(71, 69, 66, 255);
+}
+
+.banner_slides a:nth-child(2) {
+  display: inline-block;
+  padding: 5px 12px;
+  background-color: rgba(113, 105, 91, 255);
+}
+
+.banner_slides a:nth-child(3) {
+  display: inline-block;
+  padding: 5px 12px;
+  background-color: rgba(113, 105, 91, 255);
+}
+
+/* header banner down part */
+
+/* .banner_add {
+  text-align: center;
+} */
+
+:root {
+  --Shadowcolor: rgba(0, 0, 0, 0.102);
+}
+
+.banner_add {
+  box-shadow: 0 1px 0 0 var(--Shadowcolor);
+}
+
+.banner_add a {
+  display: block;
+  font-size: 18px;
+  text-transform: capitalize;
+  text-align: center;
+  text-decoration: none;
+  color: var(--reddish);
+  padding: 5px 0;
+}
+
+.banner_add button {
+  display: block;
+  margin: 0 auto;
+  padding: 3px 8px;
+  text-transform: capitalize;
+  font-size: 18px;
+
+  background-color: white;
+  border: 1px solid var(--reddish);
+  color: var(--reddish);
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* genearl part */
+
+.big_box {
+  background-color: rgba(128, 128, 128, 0.06);
+}
+
+.card {
+  background-color: white;
+  box-shadow: 2px 1px 2px 1px var(--Shadowcolor);
+  margin: 20px;
+
+  position: relative;
+}
+
+.card h2 {
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+.card .fa-calendar-days {
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.card time {
+  text-transform: capitalize;
+  padding-right: 5px;
+}
+
+.card a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+}
+
+.card .fa-user,
+.fa-comments {
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.card_text {
+  display: block;
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+.card button {
+  display: block;
+  background-color: var(--reddish);
+  color: aliceblue;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.cards_load {
+  display: block;
+  margin: 20px;
+  background-color: rgba(54, 54, 54, 255);
+  text-align: center;
+}
+
+.cards_load button {
+  padding: 5px;
+  text-transform: uppercase;
+  color: aliceblue;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* aside part */
+
+aside {
+  padding: 15px;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px var(--Shadowcolor);
+}
+
+.follow,
+.popular_posts,
+.categories,
+.search_box,
+.recent_comments,
+.drop_down_categories,
+.tags {
+  padding-bottom: 30px;
+}
+
+aside h4 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  padding-bottom: 10px;
+}
+
+.follow a i {
+  text-decoration: none;
+  padding: 10px;
+  background-color: var(--Shadowcolor);
+  color: white;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+.secondary_card {
+  display: flex;
+  text-decoration: none;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.secondary_card img {
+  height: 60px;
+  width: 100px;
+  display: inline-block;
+  object-fit: contain;
+}
+
+.secondary_card_text {
+  text-transform: capitalize;
+  font-weight: lighter;
+  padding: 0 10px;
+}
+
+.secondary_card h5 {
+  color: var(--reddish);
+}
+
+.secondary_card time {
+  font-size: 10px;
+  color: rgba(196, 195, 195, 255);
+}
+
+.categories a {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  text-decoration: none;
+  color: rgba(196, 195, 195, 255);
+  text-transform: capitalize;
+  margin: 10px 0;
+  padding: 0 10px 5px 0;
+  box-shadow: 0 1px 0 0 var(--Shadowcolor);
+}
+
+.lone_h5 {
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.search_bar {
+  width: 98%;
+  padding: 0 15px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.273);
+  border-radius: 3px;
+}
+
+.search_box {
+  position: relative;
+}
+
+.search_box button {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 25%;
+  right: -3%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(0, 0, 0, 0.273);
+  background-color: var(--reddish);
+  color: aliceblue;
+  border-radius: 3px;
+}
+
+.recent_comments a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: rgba(196, 195, 195, 255);
+  box-shadow: 0 1px 0 0 var(--Shadowcolor);
+}
+
+.recent_comments a i {
+  text-decoration: none;
+}
+
+.drop_down_categories select {
+  width: 98%;
+  padding: 0 15px;
+  height: 30px;
+  text-transform: capitalize;
+}
+
+.tags a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px;
+  margin: 1px;
+  background-color: rgba(218, 218, 218, 255);
+  color: white;
+}
+
+/*  */
+
+footer {
+  background-color: rgba(54, 54, 54, 255);
+  color: aliceblue;
+}
+
+.footer_larger_part {
+  width: 66.66%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.footer_smaller_part {
+  width: 33.33%;
+  padding: 15px;
+}
+
+.f_popular_posts,
+.f_categories {
+  padding: 0 20px;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.f_secondary_card {
+  display: flex;
+  text-decoration: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px 0;
+}
+
+.f_secondary_card img {
+  height: 60px;
+  width: 100px;
+  display: inline-block;
+  object-fit: contain;
+}
+
+.f_secondary_card_text {
+  text-transform: capitalize;
+  font-weight: lighter;
+  padding: 0 10px;
+}
+
+.f_secondary_card_text h5 {
+  color: rgba(196, 195, 195, 255);
+  text-transform: capitalize;
+}
+
+.f_secondary_card time {
+  font-size: 10px;
+  color: rgba(196, 195, 195, 255);
+}
+
+.f_categories a {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  text-decoration: none;
+  color: rgba(196, 195, 195, 255);
+  text-transform: capitalize;
+  padding: 8px 0;
+}
+
+.footer_smaller_part h2 {
+  font-size: 38px;
+}
+
+.footer_small_text {
+  display: block;
+  font-size: 12px;
+  text-transform: capitalize;
+  padding: 5px 0;
+  width: 70%;
+}
+
+.footer_dot {
+  color: rgba(119, 204, 109, 255);
+}
+
+.very_last {
+  background-color: rgba(31, 31, 31, 255);
+}
+
+.footer_end_links {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer_end_links a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.footer_end_links a i {
+  font-size: 18px;
+  background-color: rgba(54, 54, 54, 255);
+  padding: 10px;
+}
+
+.very_end_container {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.end_1,
+.end_2 {
+  padding: 15px;
+}
+
+.end_1 a,
+.end_2 a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 0 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgba(198, 198, 198, 255);
+}
+
+.end_2 {
+  color: rgba(198, 198, 198, 255);
+  text-transform: capitalize;
+}
+
+.end_2 a,
+.end_2_bold {
+  color: aliceblue;
+  text-transform: capitalize;
+}
+
+/* scrollup part */
+
+.scrollup {
+  padding: 10px;
+  background-color: rgba(200, 200, 200, 255);
+  color: aliceblue;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+  div[class*="col-"] {
+    width: 100%;
+  }
+
+  nav li,
+  nav {
+    display: block;
+    text-align: center;
+  }
+
+  .banner_background {
+    background-image: url(../images/headerbackground.jpeg);
+    background-position: center;
+  }
+  .brand_name,
+  .banner_info h1,
+  .banner_text,
+  .card h2,
+  .card_text,
+  .follow h4,
+  .popular_posts h4,
+  .categories h4,
+  .recent_comments h4,
+  .end_1 a,
+  .end_2 {
+    color: darkorange;
+  }
+
+  .end_2 a,
+  .end_2_bold {
+    color: aqua;
+  }
+
+  .card button,
+  .banner_add button {
+    background-color: deepskyblue;
+  }
+
+  .banner_add button {
+    color: aliceblue;
+  }
+
+  .secondary_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px 0;
+    text-decoration: none;
+  }
+
+  .banner_slides a:first-child {
+    display: inline-block;
+    padding: 5px 12px;
+    background-color: var(--reddish);
+  }
+
+  .banner_slides a:nth-child(2) {
+    display: inline-block;
+    padding: 5px 12px;
+    background-color: coral;
+  }
+
+  .banner_slides a:nth-child(3) {
+    display: inline-block;
+    padding: 5px 12px;
+    background-color: coral;
+  }
+
+  .footer_larger_part,
+  .footer_smaller_part {
+    display: block;
+  }
+  .f_popular_posts,
+  .f_categories {
+    width: 100%;
+    box-shadow: 0 1px 0 0 var(--reddish);
+    margin-bottom: 20px;
+  }
+
+  .footer_smaller_part {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
